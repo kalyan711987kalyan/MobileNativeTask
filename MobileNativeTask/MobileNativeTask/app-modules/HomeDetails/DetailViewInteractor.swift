@@ -9,7 +9,7 @@ import Foundation
 
 protocol DetailViewInteractorProtocol: AnyObject { }
 
-class DetailViewInteractor: DetailViewInteractorProtocol {
+final class DetailViewInteractor: DetailViewInteractorProtocol {
     weak var presenter: DetailViewPresenterProtocol?
     
 }

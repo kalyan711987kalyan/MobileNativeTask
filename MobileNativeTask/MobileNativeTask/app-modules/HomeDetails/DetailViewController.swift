@@ -12,7 +12,7 @@ protocol DetailViewProtocol {
     
 }
 
-class DetailViewController: UIViewController, DetailViewProtocol {
+final class DetailViewController: UIViewController, DetailViewProtocol {
     @IBOutlet private weak var nameLbl: UILabel!
     @IBOutlet private weak var countryCodeLbl: UILabel!
     @IBOutlet private weak var detailLbl: UILabel!

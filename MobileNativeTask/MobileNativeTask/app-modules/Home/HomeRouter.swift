@@ -13,7 +13,7 @@ protocol HomeRouterProtocol: AnyObject {
     func routeToDetailView(with model: UniversityViewModel)
 }
 
-class HomeRouter:HomeRouterProtocol  {
+final class HomeRouter:HomeRouterProtocol  {
     var viewController: UIViewController?
 
     func routeToDetailView(with model: UniversityViewModel) {

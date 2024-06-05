@@ -19,7 +19,7 @@ protocol HomePresenterProtocol: AnyObject {
     var models: [UniversityViewModel] { get set }
 }
 
-class HomePresenter: HomePresenterProtocol {
+final class HomePresenter: HomePresenterProtocol {
     var view: HomeViewProtocol?
     var interactor: HomeInteractorProtocol?
     var router: HomeRouterProtocol?

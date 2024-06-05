@@ -12,7 +12,7 @@ protocol DetailViewRouterProtocol {
     func refresh()
 }
 
-class DetailViewRouter: DetailViewRouterProtocol {
+final class DetailViewRouter: DetailViewRouterProtocol {
     var viewController: UIViewController?
 
     func refresh() {

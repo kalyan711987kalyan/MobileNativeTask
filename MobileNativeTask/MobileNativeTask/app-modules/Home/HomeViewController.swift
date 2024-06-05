@@ -12,7 +12,7 @@ protocol HomeViewProtocol: AnyObject {
     func updateSnapshot()
 }
 
-class HomeViewController: UIViewController, HomeViewProtocol {
+final class HomeViewController: UIViewController, HomeViewProtocol {
     enum ViewControllerSection: Hashable {
         case main
     }

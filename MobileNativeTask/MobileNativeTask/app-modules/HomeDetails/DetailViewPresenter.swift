@@ -12,7 +12,7 @@ protocol DetailViewPresenterProtocol: AnyObject {
     func refresh()
 }
 
-class DetailViewPresenter: DetailViewPresenterProtocol {
+final class DetailViewPresenter: DetailViewPresenterProtocol {
     var model: UniversityViewModel
     var interactor: DetailViewInteractorProtocol?
     var router: DetailViewRouterProtocol?

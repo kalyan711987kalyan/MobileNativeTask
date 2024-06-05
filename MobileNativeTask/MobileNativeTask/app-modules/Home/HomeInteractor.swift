@@ -13,7 +13,7 @@ protocol HomeInteractorProtocol: AnyObject {
     func fetchData()
 }
 
-class HomeInteractor: HomeInteractorProtocol {
+final class HomeInteractor: HomeInteractorProtocol {
     weak var presenter: HomePresenterProtocol?
     var realmDatabase: RealmDatabase
     init(presenter: HomePresenterProtocol? = nil, realmDatabase: RealmDatabase = RealmDatabase.shared) {

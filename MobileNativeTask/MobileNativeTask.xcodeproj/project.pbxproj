@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		041A9D152C10EC3000817E59 /* MobileNativeTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041A9D142C10EC3000817E59 /* MobileNativeTaskTests.swift */; };
 		044763622C10612F0036715A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044763612C10612F0036715A /* AppDelegate.swift */; };
 		044763642C10612F0036715A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044763632C10612F0036715A /* SceneDelegate.swift */; };
 		044763662C10612F0036715A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044763652C10612F0036715A /* HomeViewController.swift */; };
@@ -31,7 +32,19 @@
 		0447639C2C10E63D0036715A /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0447639B2C10E63D0036715A /* Reachability.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		041A9D162C10EC3000817E59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 044763562C10612F0036715A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0447635D2C10612F0036715A;
+			remoteInfo = MobileNativeTask;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		041A9D122C10EC3000817E59 /* MobileNativeTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobileNativeTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		041A9D142C10EC3000817E59 /* MobileNativeTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileNativeTaskTests.swift; sourceTree = "<group>"; };
 		0447635E2C10612F0036715A /* MobileNativeTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileNativeTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		044763612C10612F0036715A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		044763632C10612F0036715A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +70,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		041A9D0F2C10EC3000817E59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0447635B2C10612F0036715A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -69,10 +89,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		041A9D132C10EC3000817E59 /* MobileNativeTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				041A9D142C10EC3000817E59 /* MobileNativeTaskTests.swift */,
+			);
+			path = MobileNativeTaskTests;
+			sourceTree = "<group>";
+		};
 		044763552C10612F0036715A = {
 			isa = PBXGroup;
 			children = (
 				044763602C10612F0036715A /* MobileNativeTask */,
+				041A9D132C10EC3000817E59 /* MobileNativeTaskTests */,
 				0447635F2C10612F0036715A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -81,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				0447635E2C10612F0036715A /* MobileNativeTask.app */,
+				041A9D122C10EC3000817E59 /* MobileNativeTaskTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -164,6 +194,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		041A9D112C10EC3000817E59 /* MobileNativeTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 041A9D1A2C10EC3000817E59 /* Build configuration list for PBXNativeTarget "MobileNativeTaskTests" */;
+			buildPhases = (
+				041A9D0E2C10EC3000817E59 /* Sources */,
+				041A9D0F2C10EC3000817E59 /* Frameworks */,
+				041A9D102C10EC3000817E59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				041A9D172C10EC3000817E59 /* PBXTargetDependency */,
+			);
+			name = MobileNativeTaskTests;
+			productName = MobileNativeTaskTests;
+			productReference = 041A9D122C10EC3000817E59 /* MobileNativeTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		0447635D2C10612F0036715A /* MobileNativeTask */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 044763722C1061300036715A /* Build configuration list for PBXNativeTarget "MobileNativeTask" */;
@@ -195,6 +243,10 @@
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
+					041A9D112C10EC3000817E59 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 0447635D2C10612F0036715A;
+					};
 					0447635D2C10612F0036715A = {
 						CreatedOnToolsVersion = 15.4;
 					};
@@ -218,11 +270,19 @@
 			projectRoot = "";
 			targets = (
 				0447635D2C10612F0036715A /* MobileNativeTask */,
+				041A9D112C10EC3000817E59 /* MobileNativeTaskTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		041A9D102C10EC3000817E59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0447635C2C10612F0036715A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -236,6 +296,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		041A9D0E2C10EC3000817E59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				041A9D152C10EC3000817E59 /* MobileNativeTaskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0447635A2C10612F0036715A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -262,6 +330,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		041A9D172C10EC3000817E59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0447635D2C10612F0036715A /* MobileNativeTask */;
+			targetProxy = 041A9D162C10EC3000817E59 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		044763672C10612F0036715A /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -282,6 +358,40 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		041A9D182C10EC3000817E59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobilenativetask.MobileNativeTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MobileNativeTask.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MobileNativeTask";
+			};
+			name = Debug;
+		};
+		041A9D192C10EC3000817E59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobilenativetask.MobileNativeTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MobileNativeTask.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MobileNativeTask";
+			};
+			name = Release;
+		};
 		044763702C1061300036715A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -460,6 +570,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		041A9D1A2C10EC3000817E59 /* Build configuration list for PBXNativeTarget "MobileNativeTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				041A9D182C10EC3000817E59 /* Debug */,
+				041A9D192C10EC3000817E59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		044763592C10612F0036715A /* Build configuration list for PBXProject "MobileNativeTask" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
