@@ -15,20 +15,23 @@ protocol HomeInteractorProtocol: AnyObject {
 
 final class HomeInteractor: HomeInteractorProtocol {
     weak var presenter: HomePresenterProtocol?
-    var realmDatabase: RealmDatabase
-    init(presenter: HomePresenterProtocol? = nil, realmDatabase: RealmDatabase = RealmDatabase.shared) {
+    init(presenter: HomePresenterProtocol? = nil) {
         self.presenter = presenter
-        self.realmDatabase = realmDatabase
     }
     
     func updateToRealm(data: [UniversityViewModel]) {
-        data.forEach { model in
-            realmDatabase.updateObjects(with: UniversityRealmObject(model: model))
+        let repository = RealmDatabase<UniversityRealmObject>()
+        do {
+           try data.forEach { model in
+               try repository.saveObject(obj: UniversityRealmObject(model: model))
+            }
         }
+        catch {}
     }
     
     func fetchObjsFromRealm() {
-        let objs =  realmDatabase.getObjects()
+        let repository = RealmDatabase<UniversityRealmObject>()
+        let objs = repository.fetchAll()
         let models = objs.map { obj in
             return UniversityViewModel(from: obj)
         }

@@ -27,7 +27,7 @@ class NetworkManager {
                 completion(.failure(.invalidData))
                 return
             }
-            guard let response = response as? HTTPURLResponse, 200 ... 299  ~= response.statusCode else {
+            guard let response = response else {
                 completion(.failure(.invalidResponse))
                 return
             }
