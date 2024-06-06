@@ -121,9 +121,9 @@
 				044763612C10612F0036715A /* AppDelegate.swift */,
 				044763632C10612F0036715A /* SceneDelegate.swift */,
 				044763962C10D9D00036715A /* Database */,
-				044763842C1075CF0036715A /* common-utils */,
+				044763842C1075CF0036715A /* Common-utils */,
 				044763812C1075580036715A /* Network */,
-				044763782C106B9A0036715A /* app-modules */,
+				044763782C106B9A0036715A /* App-modules */,
 				044763672C10612F0036715A /* Main.storyboard */,
 				0447636A2C1061300036715A /* Assets.xcassets */,
 				0447636C2C1061300036715A /* LaunchScreen.storyboard */,
@@ -132,13 +132,13 @@
 			path = MobileNativeTask;
 			sourceTree = "<group>";
 		};
-		044763782C106B9A0036715A /* app-modules */ = {
+		044763782C106B9A0036715A /* App-modules */ = {
 			isa = PBXGroup;
 			children = (
 				044763802C1075480036715A /* HomeDetails */,
 				044763792C106BBB0036715A /* Home */,
 			);
-			path = "app-modules";
+			path = "App-modules";
 			sourceTree = "<group>";
 		};
 		044763792C106BBB0036715A /* Home */ = {
@@ -173,13 +173,13 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
-		044763842C1075CF0036715A /* common-utils */ = {
+		044763842C1075CF0036715A /* Common-utils */ = {
 			isa = PBXGroup;
 			children = (
 				044763852C1075F30036715A /* AppConstants.swift */,
 				044763912C10C3F90036715A /* Optional+Extension.swift */,
 			);
-			path = "common-utils";
+			path = "Common-utils";
 			sourceTree = "<group>";
 		};
 		044763962C10D9D00036715A /* Database */ = {
